@@ -1,0 +1,1 @@
+docker exec -it chemometec-cpp-builder /bin/bash

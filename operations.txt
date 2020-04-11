@@ -1,0 +1,7 @@
+git clone https://github.com/codefresh-contrib/cpp-sample-app.git source
+
+cmake ./source
+
+make
+
+make test

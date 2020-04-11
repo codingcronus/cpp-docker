@@ -1,0 +1,1 @@
+docker run -it --name chemometec-cpp-builder chemometec/cpp-builder:latest bash
