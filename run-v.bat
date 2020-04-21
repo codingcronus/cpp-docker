@@ -1,1 +1,1 @@
-docker run -d -p 8080:8080 --name chemometec-cpp-builder -v C:/globeteam/projects/chemometec/cpp-docker/container-data:/opt/tomcat/webapps/geoserver/data dmp/geoserver-sql:latest
+docker run -it --name chemometec-cpp-builder -v C:/globeteam/projects/chemometec/ci-workshop/cpp-docker/container-data:/opt/atlassian/bitbucketci/agent/build chemometec/cpp-builder:latest bash

@@ -54,4 +54,10 @@ RUN mkdir -p /opt/atlassian/bitbucketci/agent/build \
     && useradd --create-home --shell /bin/bash --uid 1000 pipelines
 
 WORKDIR /opt/atlassian/bitbucketci/agent/build
+
+RUN git clone https://github.com/codefresh-contrib/cpp-sample-app.git ./source
+RUN cmake ./source
+RUN make
+RUN make test
+
 ENTRYPOINT /bin/bash
