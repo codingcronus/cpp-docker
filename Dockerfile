@@ -55,9 +55,9 @@ RUN mkdir -p /opt/atlassian/bitbucketci/agent/build \
 
 WORKDIR /opt/atlassian/bitbucketci/agent/build
 
-RUN git clone https://github.com/codefresh-contrib/cpp-sample-app.git ./source
-RUN cmake ./source
-RUN make
-RUN make test
+#RUN git clone git clone https://mhe-gt@bitbucket.org/chemometec/demo.git ./source
+#RUN cmake ./source
+#RUN make
+#RUN make test
 
 ENTRYPOINT /bin/bash
